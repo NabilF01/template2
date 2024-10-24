@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>freeCodeCamp Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <main>
+        <section class="section-survey">
+            <fieldset>
+
+            <form action="">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" required placeholder="Enter your name" >
+                <br><br>
+                
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required placeholder="Enter your Email" >
+                <br><br>
+                
+                <label for="age">Age <em class="mini">(optional)</em></label><br>
+                <input type="text" id="age" placeholder="Age" >
+                <br><br>
+                
+                <label for="current-role">Which option best describes your current role ?</label><br>
+                <select name="current-role" id="current-role" required>
+                    <option value="" label="Select current role"></option>
+                    <option value="role1">Director</option>
+                    <option value="role2">Manager</option>
+                </select>
+                <br><br>
+                
+                <label>Would you recommend freeCodeCamp to a friend?</label><br>
+                <input type="radio" id="Definitely" name="recommend" value="def" required >
+                <label for="def">Definitely</label><br>
+                <input type="radio" id="maybe" name="recommend" value="maybe" required >
+                <label for="maybe">Maybe</label><br>
+                <input type="radio" id="nots" name="recommend" value="nots" required >
+                <label for="nots">Not sure</label>
+                <br><br>
+            
+                <label for="fav-feat">What is your favorite feature of freeCodeCamp?</label><br>
+                <select name="fav-feat" id="fav-feat" required>
+                    <option value="" label="Select an option"></option>
+                    <option value="feat1">Coding</option>
+                    <option value="feat2">Camping</option>
+                </select>
+                <br><br>
+                
+                
+                <label for="check-improve">What would you like to see improved? <em class="mini">(Check all that apply)</em></label><br>
+                <input type="checkbox" id="front" name="front" />
+                <label for="front">Front-end Projects</label><br>
+                <input type="checkbox" id="back" name="back" />
+                <label for="back">Back-end Projects</label><br>
+                <input type="checkbox" id="data" name="data" />
+                <label for="data">Data Visualization</label><br>
+                <input type="checkbox" id="chall" name="chall" />
+                <label for="chall">Challenges</label><br>
+                <input type="checkbox" id="open" name="open" />
+                <label for="open">Open Source Community</label><br>
+                <input type="checkbox" id="gitter" name="gitter" />
+                <label for="gitter">Gitter help rooms</label><br>
+                <input type="checkbox" id="videos" name="videos" />
+                <label for="videos">Videos</label><br>
+                <input type="checkbox" id="city" name="city" />
+                <label for="city">City Meetups</label><br>
+                <input type="checkbox" id="wiki" name="wiki" />
+                <label for="wiki">Wiki</label><br>
+                <input type="checkbox" id="forum" name="forum" />
+                <label for="forum">Forum</label><br>
+                <input type="checkbox" id="addi" name="addi" />
+                <label for="addi">Additional Courses</label>
+                <br><br>
+                
+                <label for="message">Any comments or suggestions?</label><br>
+                <textarea id="message" name="message" placeholder="Enter your comment here..." required></textarea>
+                <br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+            
+        </fieldset>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
